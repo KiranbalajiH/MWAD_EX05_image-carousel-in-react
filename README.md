@@ -114,31 +114,33 @@ Clean up the interval when the component unmounts using clearInterval to prevent
 '''
 ## app.jsx
 '''
-  import React from 'react';
-  import ImageCarousel from './image';
-  
-  function App() {
-    return (
-      <div>
-        <h1>React Image Carousel</h1>
-        <ImageCarousel />
-      </div>
-    );
-  }
-  
-  export default App;
+
+    import React from 'react';
+    import ImageCarousel from './image';
+    
+    function App() {
+      return (
+        <div>
+          <h1>React Image Carousel</h1>
+          <ImageCarousel />
+        </div>
+      );
+    }
+    
+    export default App;
 '''
 ## main.jsx
   '''
-  import { StrictMode } from 'react'
-  import { createRoot } from 'react-dom/client'
-  import App from './App.jsx'
   
-  createRoot(document.getElementById('root')).render(
-    <StrictMode>
-      <App />
-    </StrictMode>,
-  )
+    import { StrictMode } from 'react'
+    import { createRoot } from 'react-dom/client'
+    import App from './App.jsx'
+    
+    createRoot(document.getElementById('root')).render(
+      <StrictMode>
+        <App />
+      </StrictMode>,
+    )
 '''
 
 ## OUTPUT
